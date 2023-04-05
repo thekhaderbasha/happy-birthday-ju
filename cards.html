@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+  
+
+      html,
+      body {
+        position: relative;
+        height: 100%;
+        background-image: url(bg1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper {
+        width: 400px;
+        height: 620px;
+        font-family: 'Tenali Ramakrishna', sans-serif;
+        
+       
+      }
+      p{
+        padding: 2rem;
+      overflow: scroll;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+      
+        font-size: 22px;
+        font-weight: bold;
+        color: #000000;
+        
+      }
+
+      .swiper-slide:nth-child(1n) {
+        background-color: rgb(33, 211, 255);
+      }
+
+      .swiper-slide:nth-child(2n) {
+        background-color: rgb(0, 140, 255);
+      }
+
+      .swiper-slide:nth-child(3n) {
+        background-color: rgb(10, 184, 111);
+      }
+
+      .swiper-slide:nth-child(4n) {
+        background-color: rgb(211, 122, 7);
+      }
+
+      .swiper-slide:nth-child(5n) {
+        background-color: rgb(118, 163, 12);
+      }
+
+      .swiper-slide:nth-child(6n) {
+        background-color: rgb(180, 10, 47);
+      }
+
+      .swiper-slide:nth-child(7n) {
+        background-color: rgb(35, 99, 19);
+      }
+
+      .swiper-slide:nth-child(8n) {
+        background-color: rgb(0, 68, 255);
+      }
+
+      .swiper-slide:nth-child(9n) {
+        background-color: rgb(218, 12, 218);
+      }
+
+      .swiper-slide:nth-child(10n) {
+        background-color: rgb(54, 94, 77);
+      }
+
+
+
+      @media screen and (max-width: 600px){
+            body{
+            background-image: url(bg3.jpg);
+            background-size: 450px 700px;
+            background-repeat: no-repeat;
+        }
+
+        .swiper {
+        width: 250px;
+        height: 400px;
+        text-align: center;
+      }
+
+    p{
+      font-size: 15px;
+    }
+    }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="pic1.gif" alt="" height="500px" width="300px"></div>
+        <!-- <div class="swiper-slide">wish you <br>
+          many more <br>
+           happy returns of the day <br>
+         Shahazadi</div>
+        <div class="swiper-slide"><img src="pic2.gif" alt="" height="400px" width="250px"></div>
+        <div class="swiper-slide">happy <br> birth day <br>
+         ju</div>
+
+        <div class="swiper-slide"><img src="pic3.gif" alt="" height="500px" width="900px"></div>
+        <div class="swiper-slide">HAPPY<br> BIRTHDAY <br>
+          Mrs.The Khader Basha</div>
+        <div class="swiper-slide"><img src="pic4.gif" alt="" height="500px" width="300px"></div>
+        <div class="swiper-slide">HAPPY<br> BIRTHDAY <br>
+          MY LOVE</div>
+        <div class="swiper-slide"><img src="pic5.gif" alt="" height="500px" width="300px"></div>
+        <div class="swiper-slide">wish you <br>
+           many more <br>
+            happy returns of the day <br>
+          Miss SNF</div>
+        <div class="swiper-slide">assalam walekum</div>
+        <div class="swiper-slide">  for better experience use headphones</div>
+       
+        
+      
+        
+        <div class="swiper-slide"><video width="350" height="400" controls>
+          <source src="day6.mp4" type="video/mp4">
+          
+        </video></div>
+        <div class="swiper-slide"><video width="350" height="400" controls>
+          <source src="day5.mp4" type="video/mp4">
+          
+        </video></div>
+          <div class="swiper-slide"><video width="350" height="400" controls>
+          <source src="day4.mp4" type="video/mp4">
+          
+        </video></div>
+        <div class="swiper-slide"><video width="350" height="400" controls>
+          <source src="day3.mp4" type="video/mp4">
+        </video></div>
+        <div class="swiper-slide"><video width="350" height="400" controls>
+          <source src="day2.mp4" type="video/mp4">
+          
+        </video></div>
+          
+        </video>
+        <div class="swiper-slide"><video width="350" height="400" controls>
+          <source src="day1.mp4" type="video/mp4">
+          
+        </video></div>
+        <div class="swiper-slide"><video width="350" height="400" controls>
+          <source src="day0.mp4" type="video/mp4">
+          
+        </video></div>
+        <div class="swiper-slide"><video width="350" height="400" controls>
+          <source src="day00.mp4" type="video/mp4">
+          
+        </video></div>
+
+        <div class="swiper-slide"><img src="pic11.gif" alt="" height="500px" width="250px"></div>
+        <div class="swiper-slide">happy <br> birth day <br>
+          My MOON</div>
+
+
+
+        <div class="swiper-slide"><img src="pic7.jpg" alt="" height="400px" width="250px"></div>
+        <div class="swiper-slide">happy <br> birth day <br>
+          Meri halima</div>
+        <div class="swiper-slide"><img src="bg2.jpg" alt="" height="400px" width="250px"></div>
+        <div class="swiper-slide">EK Min <br>
+        (excuse me waitor) <br>
+      next page please</div>
+        <div class="swiper-slide"><img src="bg3.jpg" alt="" height="400px" width="300px"></div>
+
+        <div class="swiper-slide"> kya ji wallpaper pooche ne download karo next ismay hai</div>
+        <div class="swiper-slide">
+          <a href="pic8.jpg" download><img src="pic8.jpg" download alt="" height="400px" width="300px"></a></div>
+          <div class="swiper-slide"> kush...,  <br>
+          HAPPY BIRTHDAY DIWANI</div>
+          <div class="swiper-slide"><img src="pic12.gif" alt="" height="500px" width="250px"></div>
+
+          <div class="swiper-slide"><video width="350" height="400" controls>
+            <source src="vid1.mp4" type="video/mp4">
+            
+          </video></div>
+          <div class="swiper-slide"><video width="350" height="400" controls>
+            <source src="vid2.mp4" type="video/mp4">
+            
+          </video></div>
+          <div class="swiper-slide"><video width="350" height="400" controls>
+            <source src="vid3.mp4" type="video/mp4">
+            
+          </video></div>
+          <div class="swiper-slide"><video width="350" height="400" controls>
+            <source src="vid4.mp4" type="video/mp4">
+            
+          </video></div>
+          <div class="swiper-slide"><video width="350" height="400" controls>
+            <source src="vid5.mp4" type="video/mp4">
+            
+          </video></div>
+          <div class="swiper-slide"><video width="350" height="400" controls>
+            <source src="vid6.mp4" type="video/mp4">
+            
+          </video></div>
+
+          <div class="swiper-slide"> complete this...</div>
+
+          <div class="swiper-slide"><video width="350" height="400" controls>
+            <source src="vid7.mp4" type="video/mp4">
+            
+          </video></div>
+          <div class="swiper-slide"><video width="350" height="400" controls>
+            <source src="vid8.mp4" type="video/mp4">
+            
+          </video></div>
+
+          <div class="swiper-slide"><img src="pic13.gif" alt="" height="500px" width="250px"></div>
+          <div class="swiper-slide">yaad hai kya a. muje achha yaad hai apke mail ka dp a phele baar deku aur save karu
+            this is for my paani ji <br> HAPPY BIRTHDAY PAANI JI
+          </div> -->
+          <div class="swiper-slide">apse baat karne koi wait kar rahe hai salam bolo phele  
+          </div>
+          <div class="swiper-slide"><img src="pic9.jpeg" alt="" height="450px" width="250px"></div>
+
+          <div class="swiper-slide"><p>arrey.. arrey.. walekum asslam meri bachhi tera salam mere tak hamesha aata aur my uska jawab be deti hu 
+            hamesha kush ho meri bachhi. bahut kushi hui tuje dekke jab tu mere bete ke saat hati uska khayal rakti, 
+            my tho nai hu wa lekin muje ab koi fikar nai kyu ke tu hai mere bete ke saat bahut kush hu.
+            <br>
+            </p></div>
+
+            <div class="swiper-slide"><p>
+              <br>
+
+
+            shukriya meri bahu arrey.. hande shukriya bolne de muje
+             har saal akhib ke bd ku my banko msg karne ke liye mere bete ka mujse jyada khayal rakne ke liye.
+              ketti pyari lag rahi ho mera beta crct bolta ek dum chand jisi hati katho mashallah nazar na lage.  
+            bahut kushi hui tujse milke kis dekleta hai mera heera ha thoda ziddi hai lekin dil ka naram 
+            hai sirf tere barmay he bolta hata bahut oyaar karta hai tujse bahut yaad karta hata tuje kabi mere bete ku chodke mat jaa
+             meri bachhi
+             
+            </p></div>
+            <div class="swiper-slide"><p>
+            shh ab in baaton ka waqt nai kabi jaroor baat karinge aaj kushi ka din kya tho
+
+
+             gift diya nai mera beta ussey kya le my deti hu tuje gift mere bete ku kush rah meri bachhi, 
+             <br>
+             HAPPY BIRTHDAY MERI BAHU
+ </p>
+          </div>
+
+          <div class="swiper-slide">shhhhhhh.... ammi silent phir falak udti
+          </div>
+          <div class="swiper-slide"><img src="usman.jpg" alt="" height="450px" width="250px"></div>
+
+          <div class="swiper-slide"><p>
+            <br>
+
+
+        happy birth day to you <br>happy birthday to you... <br>
+        happy birthday dear ammi 
+        <br>happy birthday to you
+        <br>
+        falak sogai ammi my utke apko phele wish karna katho love you ammi your te best ammi in the world
+        abbu aati my sojatu
+           
+          </p></div>
+
+          <div class="swiper-slide"><img src="pic10.jpeg" alt="" height="450px" width="250px"></div>
+
+          <div class="swiper-slide"><p>happy birthday neelu..., <br>
+            ballaka miss kartuhu neelu beta. lekin bahut kush hu tume sab strong he. alhamdulillah achha he sab.
+            meri sharifa ku achha deklo, kiku rulati haa thoda gussa hoti hai lekin sab samalna ne maa kya kaliye nai jissa mere waste thoda samal lo
+        
+            <br>
+            </p></div>
+            <div class="swiper-slide"><p>tuje malum mere pass iphone 14 pro max hal 
+              ab hata tho my usmay video nikalta tha lekin muje kya ab dar nai tere paas mera chota jamai hai na
+              jare din sab achha hota 
+            
+              roti hai kya diwani my hu ne the khader basha hai tere saat 
+              bahut lucky malum tu yaa jannat may b tera husband famous badi shaan wala kabi chodle nakko
+              bole so baat sunna achha dekle mere jamai ku 
+              <br>
+              happy birthday neelu
+          
+              <br>
+              </p></div>
+
+          
+        <div class="swiper-slide">laddu</div>
+        <div class="swiper-slide">meri jaan</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
+  </body>
+</html>
